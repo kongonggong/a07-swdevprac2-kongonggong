@@ -1,0 +1,26 @@
+.cardContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .cardHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .cardRating {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+  }
+  

@@ -1,10 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 0 2rem 4rem;
   min-height: 100vh;
+  background-color: #f0f2f5;
+  overflow-x: hidden; /* Ensure no horizontal overflow */
 }
 
 .description {
@@ -41,9 +43,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
 }
 
 .card {
@@ -226,5 +230,16 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .grid {
+    gap: 1rem;
+    padding: 1rem;
   }
 }
